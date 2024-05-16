@@ -1,0 +1,47 @@
+﻿namespace Assignment_Q3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int choice;
+
+            do
+            {
+                Console.WriteLine("1. addition");
+                Console.WriteLine("2. substraction");
+                Console.WriteLine("3. multiplacation");
+                Console.WriteLine("4. division");
+                Console.WriteLine("0. Exit");
+                Console.WriteLine(" Enter Choice :");
+                choice = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter No1 :");
+                int a1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter No2 :");
+                int b1 = Convert.ToInt32(Console.ReadLine());
+
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine(a1 + b1);
+                        break;
+                    case 2:
+                        Console.WriteLine(a1 - b1);
+                        break;
+                    case 3:
+                        Console.WriteLine(a1 * b1);
+                        break;
+                    case 4:
+                        Console.WriteLine(a1 / b1);
+                        break;
+
+                    default:
+
+                        break;
+                }
+
+            } while (choice != 0);
+        }
+    }
+}
